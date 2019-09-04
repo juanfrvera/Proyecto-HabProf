@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Web\\Proyecto-HabProf\\LibreriaAPI\\Libreria\\Libreria.csproj": {}
+    "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\Libreria.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Web\\Proyecto-HabProf\\LibreriaAPI\\Libreria\\Libreria.csproj": {
+    "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\Libreria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Web\\Proyecto-HabProf\\LibreriaAPI\\Libreria\\Libreria.csproj",
+        "projectUniqueName": "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\Libreria.csproj",
         "projectName": "Libreria",
-        "projectPath": "C:\\Dev\\Web\\Proyecto-HabProf\\LibreriaAPI\\Libreria\\Libreria.csproj",
+        "projectPath": "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\Libreria.csproj",
         "packagesPath": "C:\\Users\\juanf\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Web\\Proyecto-HabProf\\LibreriaAPI\\Libreria\\obj\\",
+        "outputPath": "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
