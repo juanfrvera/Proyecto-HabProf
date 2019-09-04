@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria", "Libreria.csproj", "{2E69BDE0-34B7-4C96-87CC-C6D60A646F3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria", "Libreria.csproj", "{2E69BDE0-34B7-4C96-87CC-C6D60A646F3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4F1296F-77AA-4DFC-AAFE-F01D163215F9}"
+	ProjectSection(SolutionItems) = preProject
+		Material.cs = Material.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
