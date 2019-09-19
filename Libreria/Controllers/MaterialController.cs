@@ -3,21 +3,47 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TodoApi.Models;
+using Libreria.Models;
 
-namespace TodoApi.Controllers
+namespace Libreria.Controllers
 {
 	[Route("api/[controller]")]
+	[Route("api/[controller]")]
+	public class MaterialController : ControllerBase
+	{
+		private readonly  MaterialContext _context;
 
-	//Listar materiales
-	//GET: /api/Material
-	//Consultar un material
-	//GET: /api/Material/5
-	//
-	//GET: /api/
-	//Agregar un material
-	//POST: /api/Material
-	//
-	//
-	
+
+		public MaterialController(MaterialContext context)
+		{
+			_context = context;
+		}
+
+		//Listar materiales
+		//GET: /api/Material
+		//Consultar un material
+		//GET: /api/Material/5
+		//
+		[HttpGet]
+		public async Task<ActionResult<Material>> GetMaterial(long id)
+		{
+			var unMaterial = await _context.Materiales.FindAsync(id);
+
+			if (unMaterial == null) 
+			{
+				return NotFound();
+			}
+			return unMaterial;
+		}
+
+		//GET: /api/
+		//Agregar un material
+		//POST: /api/Material
+		[HttpGet]
+		public async Task<ActionResult<IEnumerable<Material>>> GetMateriales()
+		{
+			return await _context.Materiales.ToListAsync();
+		}
+	}
+
 }
