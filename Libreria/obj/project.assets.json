@@ -12090,7 +12090,7 @@
       "outputPath": "/home/sandro/documents/frcu/habilitacion/src/Proyecto-HabProf/Libreria/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/sandro/.nuget/NuGet/NuGet.Config"
+        "/home/sandro/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

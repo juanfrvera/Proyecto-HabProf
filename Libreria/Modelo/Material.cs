@@ -17,6 +17,47 @@ public class Material
 		private int stock;
 		private bool anulado;
 		private string id;
+
+		public string Titulo1 => titulo;
+
+		public string Ubicacion
+		{
+			get => ubicacion;
+			set => ubicacion = value;
+		}
+
+		public float Precio
+		{
+			get => precio;
+			set => precio = value;
+		}
+
+		public int Stock
+		{
+			get => stock;
+			set => stock = value;
+		}
+
+		public bool Anulado
+		{
+			get => anulado;
+			set => anulado = value;
+		}
+
+		public string Autores => autores;
+
+		public string Isbn => isbn;
+
+		public short Edicion => edicion;
+
+		public string Issn => issn;
+
+		public string Categoria => categoria;
+
+		public string Id => id;
+
+		public bool Usado => usado;
+
 		private bool usado;
 		public Material(string titulo)
 		{

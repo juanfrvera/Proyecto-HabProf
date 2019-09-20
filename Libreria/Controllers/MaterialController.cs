@@ -8,7 +8,7 @@ using Libreria.Models;
 namespace Libreria.Controllers
 {
 	[Route("api/[controller]")]
-	[Route("api/[controller]")]
+	[ApiController]
 	public class MaterialController : ControllerBase
 	{
 		private readonly  MaterialContext _context;
@@ -37,12 +37,24 @@ namespace Libreria.Controllers
 		}
 
 		//GET: /api/
-		//Agregar un material
+		//Consultar materiales
 		//POST: /api/Material
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Material>>> GetMateriales()
 		{
 			return await _context.Materiales.ToListAsync();
+		}
+				
+		//Agregar un Material
+		//POST: /api/Material
+		[HttpPost]
+		public async Task<ActionResult<Material>> PostMaterial(Material unMaterial)
+		{
+			_context.Materiales.Add(unMaterial);
+			await _context.SaveChangesAsync();
+			
+
+			return CreatedAtAction(nameof(GetMaterial), new {}, unMaterial);
 		}
 	}
 
