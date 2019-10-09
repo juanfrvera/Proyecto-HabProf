@@ -53,7 +53,6 @@ namespace Libreria.Controllers
 			_context.Materiales.Add(unMaterial);
 			await _context.SaveChangesAsync();
 			
-
 			return CreatedAtAction(nameof(GetMaterial), new {}, unMaterial);
 		}
 	}
