@@ -12,3 +12,17 @@ C:\Dev\Web\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.AssemblyIn
 C:\Dev\Web\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.RazorTargetAssemblyInfo.cache
 C:\Dev\Web\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.dll
 C:\Dev\Web\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.pdb
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\bin\Debug\netcoreapp2.1\Libreria.deps.json
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\bin\Debug\netcoreapp2.1\Libreria.runtimeconfig.json
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\bin\Debug\netcoreapp2.1\Libreria.runtimeconfig.dev.json
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\bin\Debug\netcoreapp2.1\Libreria.dll
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\bin\Debug\netcoreapp2.1\Libreria.pdb
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.csprojAssemblyReference.cache
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.csproj.CoreCompileInputs.cache
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.RazorAssemblyInfo.cache
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.RazorAssemblyInfo.cs
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.AssemblyInfoInputs.cache
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.AssemblyInfo.cs
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.RazorTargetAssemblyInfo.cache
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.dll
+C:\Users\tatos\source\repos\Proyecto-HabProf\Libreria\obj\Debug\netcoreapp2.1\Libreria.pdb

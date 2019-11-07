@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\Libreria.csproj": {}
+    "C:\\Users\\tatos\\source\\repos\\Proyecto-HabProf\\Libreria\\Libreria.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\Libreria.csproj": {
+    "C:\\Users\\tatos\\source\\repos\\Proyecto-HabProf\\Libreria\\Libreria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\Libreria.csproj",
+        "projectUniqueName": "C:\\Users\\tatos\\source\\repos\\Proyecto-HabProf\\Libreria\\Libreria.csproj",
         "projectName": "Libreria",
-        "projectPath": "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\Libreria.csproj",
-        "packagesPath": "C:\\Users\\juanf\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Web\\Proyecto-HabProf\\Libreria\\obj\\",
+        "projectPath": "C:\\Users\\tatos\\source\\repos\\Proyecto-HabProf\\Libreria\\Libreria.csproj",
+        "packagesPath": "C:\\Users\\tatos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tatos\\source\\repos\\Proyecto-HabProf\\Libreria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\juanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tatos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
