@@ -34,6 +34,7 @@ namespace Libreria.BusinessLogic
             dto.Observaciones = Observaciones;
             dto.Anulado = Anulado;
             
+            return dto;
         }
     }
 }
