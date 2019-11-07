@@ -37,6 +37,7 @@ namespace Libreria.BusinessLogic
         public MaterialDto Dto()
         {
             MaterialDto dto = new MaterialDto();
+            
             dto.ID = id;
             dto.Titulo = titulo;
             dto.Isbn = isbn;
@@ -51,6 +52,8 @@ namespace Libreria.BusinessLogic
             dto.Editorial = editorial.Dto();
             dto.Categoria = categoria.Dto();
             dto.Autor = autor.Dto();
+            
+            return dto;
         }
 
         public void Anular()
