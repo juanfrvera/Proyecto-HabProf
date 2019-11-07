@@ -14,5 +14,16 @@ namespace Libreria.BusinessLogic
             nombre = dto.Nombre;
             anulado = dto.Anulado;
         }
+
+        public EditorialDto Dto()
+        {
+            EditorialDto dto = new EditorialDto();
+            
+            dto.ID = id;
+            dto.Nombre = nombre;
+            dto.Anulado = anulado;
+            
+            return dto;
+        }
     }
 }
