@@ -4,10 +4,10 @@ namespace Libreria.BusinessLogic.Dto
 {
     public class VentaDto
     {
-        public bool anulada;
-        public float monto;
-        public string fecha;
-        public int idMedioDePago;
-        public ICollection<LineaDeVentaDto> lineasDeVenta;
+        public int ID { get; set; }
+        public bool Anulada { get; set; }
+        public float Monto { get; set; }
+        public string Timestamp { get; set; }
+        public MedioDePagoDto MedioDePagoDto { get; set; }
     }
 }
