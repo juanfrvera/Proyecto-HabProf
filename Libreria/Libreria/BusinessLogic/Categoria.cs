@@ -22,6 +22,8 @@ namespace Libreria.BusinessLogic
             dto.ID = ID;
             dto.Nombre = Nombre;
             dto.Anulado = Anulado;
+            
+            return dto;
         }
     }
 }
