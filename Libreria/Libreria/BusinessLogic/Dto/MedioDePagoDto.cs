@@ -1,0 +1,11 @@
+namespace Libreria.BusinessLogic.Dto
+{
+    public class MedioDePagoDto
+    {
+        public int ID { get; set; }
+        public string Nombre { get; set; }
+        public float Comision { get; set; }
+        public bool Anulado { get; set; }
+        public TipoDeComisionDto TipoDeCargo { get; set; }
+    }
+}
