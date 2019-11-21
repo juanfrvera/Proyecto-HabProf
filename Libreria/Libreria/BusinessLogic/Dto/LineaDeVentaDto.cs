@@ -2,8 +2,8 @@ namespace Libreria.BusinessLogic.Dto
 {
     public class LineaDeVentaDto
     {
-        public int cantidad, idMaterial;
-        public float precio, descuento;
-        public MaterialDto Material { get; set; }
+        public int Cantidad, IdMaterial;
+        public float Precio, Descuento;
+        public MaterialDto Material;
     }
 }
