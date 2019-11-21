@@ -57,7 +57,12 @@ namespace Libreria.BusinessLogic
             dto.Proveedor = _proveedor.Dto();
             dto.Editorial = _editorial.Dto();
             dto.Categoria = _categoria.Dto();
-            dto.Autores = _autores.Dto();
+            dto.Autores = new List<AutorDto>();
+
+            foreach (Autor unAutor in _autores)
+            {
+                dto.Autores.Add(new AutorDto(unAutor.Dto()));
+            }
             
             return dto;
         }
