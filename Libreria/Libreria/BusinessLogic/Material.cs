@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Libreria.BusinessLogic.Dto;
 
 namespace Libreria.BusinessLogic
@@ -12,7 +13,7 @@ namespace Libreria.BusinessLogic
         private Proveedor _proveedor;
         private Editorial _editorial;
         private Categoria _categoria;
-        private Autor _autor;
+        private IList<Autor> _autores;
 
         // Constructor
         public Material(MaterialDto dto)
@@ -30,7 +31,12 @@ namespace Libreria.BusinessLogic
             _proveedor = new Proveedor(dto.Proveedor);
             _editorial = new Editorial(dto.Editorial);
             _categoria = new Categoria(dto.Categoria);
-            _autor = new Autor(dto.Autor);
+            _autores = new List<Autor>();
+            
+            foreach (AutorDto unAutorDto in dto.Autores)
+            {
+                _autores.Add(new Autor(unAutorDto));
+            }
         }
         
         // Generar DTO
@@ -51,7 +57,7 @@ namespace Libreria.BusinessLogic
             dto.Proveedor = _proveedor.Dto();
             dto.Editorial = _editorial.Dto();
             dto.Categoria = _categoria.Dto();
-            dto.Autor = _autor.Dto();
+            dto.Autores = _autores.Dto();
             
             return dto;
         }

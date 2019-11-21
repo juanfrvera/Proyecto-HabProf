@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Libreria.BusinessLogic.Dto
 {
     public class MaterialDto
@@ -12,7 +14,7 @@ namespace Libreria.BusinessLogic.Dto
         public bool Anulado { get; set; }
         public bool Usado { get; set; }
         public float Precio { get; set; }
-        public AutorDto Autor { get; set; }
+        public List<AutorDto> Autores { get; set; }
         public EditorialDto Editorial { get; set; }
         public CategoriaDto Categoria { get; set; }
         public ProveedorDto Proveedor { get; set; }
