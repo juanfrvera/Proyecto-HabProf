@@ -61,7 +61,7 @@ namespace Libreria.BusinessLogic
 
             foreach (Autor unAutor in _autores)
             {
-                dto.Autores.Add(new AutorDto(unAutor.Dto()));
+                dto.Autores.Add(unAutor.Dto());
             }
             
             return dto;
