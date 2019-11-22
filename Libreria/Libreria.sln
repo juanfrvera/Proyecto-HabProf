@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4F1296F-77AA-4DFC-AAFE-F01D163215F9}"
-	ProjectSection(SolutionItems) = preProject
-		Material.cs = Material.cs
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria", "Libreria\Libreria.csproj", "{29F1477A-5A2B-4898-B075-C1ADB38CF191}"
 EndProject

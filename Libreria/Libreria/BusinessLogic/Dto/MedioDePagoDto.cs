@@ -6,6 +6,6 @@ namespace Libreria.BusinessLogic.Dto
         public string Nombre { get; set; }
         public float Comision { get; set; }
         public bool Anulado { get; set; }
-        public TipoDeComisionDto TipoDeCargo { get; set; }
+        public TipoDeComision TipoDeComision { get; set; }
     }
 }
