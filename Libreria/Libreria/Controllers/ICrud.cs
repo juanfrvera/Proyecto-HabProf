@@ -6,7 +6,7 @@ namespace Libreria.Controllers
 {
     public interface ICrud
     {
-        List<DtoBase> Listar(string filtro);
+        IList<DtoBase> Listar(string filtro);
         IActionResult Agregar(DtoBase unObjeto);
         IActionResult Modificar(DtoBase unObjeto);
         DtoBase Consultar(int id);

@@ -1,7 +1,7 @@
 namespace Libreria.BusinessLogic.Dto
 {
-    public class DtoBase
+    public abstract class DtoBase
     {
-        public int id;
+        int ID {get; set; }
     }
 }
