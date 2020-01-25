@@ -28,9 +28,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./src/scripts/css/bootstrap.min.css",
+              "./src/scripts/css/fontawesome/css/all.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/scripts/js/jquery-3.4.1.js",
+              "./src/scripts/js/popper.min.js",
+              "./src/scripts/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +130,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "library-client"
 }
