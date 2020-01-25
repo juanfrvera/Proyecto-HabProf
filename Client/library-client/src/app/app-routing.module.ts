@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MaterialsComponent } from './components/materials/materials.component';
 import { StartComponent } from './components/start/start.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
@@ -14,15 +13,15 @@ const routes: Routes = [
     }
   },
   {
-    path: 'materiales/:id',
-    component: MaterialsComponent,
+    path: 'material/:id',
+    loadChildren: () => import('./components/materials/materials.module').then(m => m.MaterialsModule),
     data: {
       title: 'Materiales'
     }
   },
   {
     path: 'materiales',
-    component: MaterialsComponent,
+    loadChildren: () => import('./components/materials/materials.module').then(m => m.MaterialsModule),
     data: {
       title: 'Materiales'
     }
