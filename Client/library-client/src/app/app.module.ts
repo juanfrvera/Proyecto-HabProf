@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { MaterialsComponent } from './materials/materials.component';
-import { StartComponent } from './start/start.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { MaterialsComponent } from './components/materials/materials.component';
+import { StartComponent } from './components/start/start.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
