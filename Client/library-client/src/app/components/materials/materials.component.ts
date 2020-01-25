@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Material } from 'src/app/models/material';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-materials',
@@ -8,7 +9,8 @@ import { Material } from 'src/app/models/material';
 })
 export class MaterialsComponent implements OnInit {
   private materials: Array<Material>;
-  private selectedMaterial: Material;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.materials = new Array<Material>();
@@ -16,8 +18,9 @@ export class MaterialsComponent implements OnInit {
     this.materials.push(new Material(2, "Libro2", "Tato", "Disney Cursed Line", 180, 2));
   }
 
-  materialClicked(material: Material) {
-    this.selectedMaterial = material;
-    $('#materialModal').modal('show');
+  // When a material of the list is clicked
+  private materialClicked(material: Material) {
+    //this.location.replaceState("/materiales/".concat(material.Id.toString()));
+    this.router.navigate(["materiales", material.Id]);
   }
 }
