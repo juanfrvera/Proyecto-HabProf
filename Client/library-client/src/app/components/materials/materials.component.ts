@@ -1,6 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Material } from 'src/app/models/material';
 import { Router } from '@angular/router';
+
+import { MaterialService } from '../../services/materials/material.service';
+import { Material } from './../../models/material';
 
 @Component({
   selector: 'app-materials',
@@ -8,19 +10,54 @@ import { Router } from '@angular/router';
   styleUrls: ['./materials.component.scss']
 })
 export class MaterialsComponent implements OnInit {
-  private materials: Array<Material>;
+  readonly pageSize: number = 15;
 
-  constructor(private router: Router) { }
+  private materials: Array<Material>;
+  // The number of pages that will be displayed in the pagination
+  private pages: Array<number>;
+
+  private actualPage: number = 1;
+
+  constructor(private router: Router, private materialService: MaterialService) { }
 
   ngOnInit() {
-    this.materials = new Array<Material>();
-    this.materials.push(new Material(1, "Libro0", "Juan", "Mariquita Sanches de Fhonson", 50, 3));
-    this.materials.push(new Material(2, "Libro2", "Tato", "Disney Cursed Line", 180, 2));
+    this.loadMaterials(this.actualPage);
+    this.materialService.count().subscribe(c => {
+      let pageCount: number = Math.ceil(c / this.pageSize);
+      this.pages = new Array<number>();
+      for (let i = 1; i <= pageCount; i++) {
+        this.pages.push(i);
+      }
+    });
   }
 
   // When a material of the list is clicked
   private materialClicked(material: Material) {
-    //this.location.replaceState("/materiales/".concat(material.Id.toString()));
     this.router.navigate(["materiales", material.Id]);
+  }
+
+  private loadMaterials(page: number) {
+    let start: number = (page - 1) * this.pageSize + 1;
+    let end: number = page * this.pageSize;
+
+    this.materialService.getAll(start, end).subscribe(materials => this.materials = materials);
+
+    // Outside the suscribe, so we don't have to bind the method
+    this.actualPage = page;
+  }
+  private prevPage() {
+    if (this.actualPage > 1) {
+      this.loadMaterials(this.actualPage - 1);
+    }
+  }
+  private page(pageIndex: number) {
+    if (pageIndex != this.actualPage) {
+      this.loadMaterials(pageIndex);
+    }
+  }
+  private nextPage() {
+    if (this.actualPage < this.pages.length) {
+      this.loadMaterials(this.actualPage + 1);
+    }
   }
 }

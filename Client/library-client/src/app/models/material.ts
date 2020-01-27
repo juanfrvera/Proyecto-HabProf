@@ -1,31 +1,31 @@
 export class Material {
   private id: number;
-  private title: string;
-  private author: string;
-  private provider: string;
-  private price: number;
+  private titulo: string;
+  private autor: string;
+  private proveedor: string;
+  private precio: number;
   private stock: number;
 
   // Constructors
-  constructor(id: number, title: string, author: string, provider: string, price: number, stock: number) {
+  constructor(id: number, titulo: string, autor: string, proveedor: string, precio: number, stock: number) {
     this.id = id;
-    this.title = title;
-    this.author = author;
-    this.provider = provider;
-    this.price = price;
+    this.titulo = titulo;
+    this.autor = autor;
+    this.proveedor = proveedor;
+    this.precio = precio;
     this.stock = stock;
   }
   // Properties
   get Id(): number { return this.id; }
 
-  get Title(): string { return this.title; }
+  get Titulo(): string { return this.titulo; }
 
-  get Author(): string { return this.author; }
+  get Autor(): string { return this.autor; }
 
-  get Provider(): string { return this.provider; }
-  set Provider(value: string) { this.provider = value; }
+  get Proveedor(): string { return this.proveedor; }
+  set Proveedor(value: string) { this.proveedor = value; }
 
-  get Price(): number { return this.price; }
+  get Precio(): number { return this.precio; }
 
   get Stock(): number { return this.stock; }
 }

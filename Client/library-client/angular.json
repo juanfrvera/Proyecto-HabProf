@@ -28,9 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./src/scripts/css/bootstrap.min.css",
-              "./src/scripts/css/fontawesome/css/all.css"
+              "src/styles.scss"
             ],
             "scripts": [
               "./src/scripts/js/jquery-3.4.1.js",

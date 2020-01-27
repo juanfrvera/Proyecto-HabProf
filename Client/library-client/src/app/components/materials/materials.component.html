@@ -13,11 +13,24 @@
   <tbody>
     <tr *ngFor="let material of materials" (click)="materialClicked(material)" style="cursor:pointer;">
       <td>{{material.Id}}</td>
-      <th scope="row">{{material.Title}}</th>
-      <td>{{material.Author}}</td>
-      <td>{{material.Provider}}</td>
-      <td>{{material.Price}}</td>
+      <th scope="row">{{material.Titulo}}</th>
+      <td>{{material.Autor}}</td>
+      <td>{{material.Proveedor}}</td>
+      <td>{{material.Precio}}</td>
       <td>{{material.Stock}}</td>
     </tr>
   </tbody>
 </table>
+<nav aria-label="..." style="cursor:pointer;">
+  <ul class="pagination justify-content-center">
+    <li class="page-item d-none d-sm-block" [ngClass]="{disabled : actualPage == 1}">
+      <a class="page-link" (click)="prevPage()" tabindex="-1" aria-disabled="true">Anterior</a>
+    </li>
+    <li class="page-item" *ngFor="let p of pages" [ngClass]="{active : p == actualPage}">
+      <a class="page-link" (click)="page(p)">{{p}}</a>
+    </li>
+    <li class="page-item d-none d-sm-block">
+      <a class="page-link" (click)="nextPage()">Siguiente</a>
+    </li>
+  </ul>
+</nav>
