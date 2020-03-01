@@ -1,6 +1,6 @@
 namespace Libreria.BusinessLogic.Dto
 {
-    public class EditorialDto
+    public class EditorialDto : DtoBase
     {
         public int ID { get; set; }
         public string Nombre { get; set; }
