@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Libreria.BusinessLogic.Dto
 {
-    public class VentaDto
+    public class VentaDto : DtoBase
     {
         public int ID { get; set; }
         public bool Activo { get; set; }
