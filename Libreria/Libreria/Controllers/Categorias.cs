@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Libreria.Controllers
 {
-    public class Categorias : Controller, ICrud
+    public class Categorias : Controller
     {
         private List<Categoria> _categorias;
 
@@ -17,33 +17,37 @@ namespace Libreria.Controllers
         }
         
         // GET
-        public List<CategoriaDto> Index(string filtro)
+        public List<CategoriaDto> Index(string filtro, int inicio, int fin)
         {
-            return Listar(filtro);
+            return Listar(filtro, inicio, fin);
         }
 
-        //TODO: agregar paginación al listar.
-        public IList<DtoBase> Listar(string filtro)
+        public List<CategoriaDto> Listar(string filtro, int inicio, int fin)
         {
-            return new List<DtoBase>();
-        }
+            List<Categoria> listadoDeCategorias = _categorias.GetRange(inicio, fin);
+            List<CategoriaDto> listadoDeCategoriasDto = new List<CategoriaDto>();
 
-        public IList<CategoriaDto> Listar(string filtro)
-        {
-            return new List<CategoriaDto>();
+            foreach (Categoria categoria in listadoDeCategorias)
+            {
+                listadoDeCategoriasDto.Append(listadoDeCategorias.Dto());
+            }
+            
+            return listadoDeCategoriasDto;
         }
 
         public IActionResult Agregar(CategoriaDto unDto)
         {
             Categoria unaCategoria = new Categoria(unDto);
             _categorias.Append(unaCategoria);
+
+            return Ok();
         }
 
         public IActionResult Modificar(CategoriaDto unDto)
         {
             Categoria categoriaNueva = new Categoria(unDto);
-            var encontrado = _categorias.IndexOf(unaCategoria);
-            if (encontrado)
+            var encontrado = _categorias.IndexOf(categoriaNueva);
+            if (encontrado >= 0)
             {
                 _categorias[encontrado] = categoriaNueva;
             }

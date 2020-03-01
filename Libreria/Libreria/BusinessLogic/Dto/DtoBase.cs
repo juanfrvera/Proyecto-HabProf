@@ -1,6 +1,6 @@
 namespace Libreria.BusinessLogic.Dto
 {
-    public abstract class DtoBase
+    public interface DtoBase
     {
         int ID {get; set; }
     }
