@@ -13,7 +13,7 @@ namespace Libreria.BusinessLogic
         private Proveedor _proveedor;
         private Editorial _editorial;
         private Categoria _categoria;
-        private IList<Autor> _autores;
+        private List<Autor> _autores;
 
         // Constructor
         public Material(MaterialDto dto)
@@ -75,46 +75,85 @@ namespace Libreria.BusinessLogic
         public string Titulo
         {
             get => _titulo;
+            set => _titulo = value;
         }
 
         public string Isbn
         {
             get => _isbn;
+            set => _isbn = value;
         }
 
         public string Issn
         {
             get => _issn;
+            set => _issn = value;
         }
 
         public string Ubicacion
         {
             get => _ubicacion;
+            set => _ubicacion = value;
         }
 
         public short Edicion
         {
             get => _edicion;
+            set => _edicion = value;
         }
 
         public short Stock
         {
             get => _stock;
+            set => _stock = value;
         }
 
-        public bool Anulado
+        public int Id
         {
-            get => _anulado;
-        }
-
-        public bool Usado
-        {
-            get => _usado;
+            get => _id;
+            set => _id = value;
         }
 
         public float Precio
         {
             get => _precio;
+            set => _precio = value;
+        }
+
+        public bool Anulado
+        {
+            get => _anulado;
+            set => _anulado = value;
+        }
+
+        public bool Usado
+        {
+            get => _usado;
+            set => _usado = value;
+        }
+
+        public Proveedor Proveedor
+        {
+            get => _proveedor;
+            set => _proveedor = value;
+        }
+
+        public Editorial Editorial
+        {
+            get => _editorial;
+            set => _editorial = value;
+        }
+
+        public Categoria Categoria
+        {
+            get => _categoria;
+            set => _categoria = value;
+        }
+
+        public List<Autor> Autores
+        {
+            get => _autores;
+            set => _autores = value;
         }
     }
 }
