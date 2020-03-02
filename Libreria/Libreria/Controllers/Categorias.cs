@@ -29,7 +29,7 @@ namespace Libreria.Controllers
 
             foreach (Categoria categoria in listadoDeCategorias)
             {
-                listadoDeCategoriasDto.Append(listadoDeCategorias.Dto());
+                listadoDeCategoriasDto.Append(categoria.Dto());
             }
             
             return listadoDeCategoriasDto;
