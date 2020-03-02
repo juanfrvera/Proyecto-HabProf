@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Libreria.BusinessLogic.Dto;
 
 namespace Libreria.BusinessLogic
@@ -7,6 +8,7 @@ namespace Libreria.BusinessLogic
         public int ID { get; set; }
         public string Nombre { get; set; }
         public bool Anulado { get; set; }
+        public List<MaterialAutor> MaterialAutores { get; set; }
 
         public Autor(AutorDto dto)
         {
