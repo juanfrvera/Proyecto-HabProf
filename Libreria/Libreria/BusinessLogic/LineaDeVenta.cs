@@ -8,6 +8,10 @@ namespace Libreria.BusinessLogic
         private float _precio;
         private float _descuento;
         private Material _material;
+        
+        public int VentaId { get; set; }
+        
+        public Venta Venta { get; set; }
 
         public int Cantidad
         {
