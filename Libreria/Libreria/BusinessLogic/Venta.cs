@@ -1,40 +1,26 @@
+using System.Collections.Generic;
 using Libreria.BusinessLogic.Dto;
 
 namespace Libreria.BusinessLogic
 {
     public class Venta
     {
-        private int _id;
-        private bool _activo;
-        private float _monto;
-        private string _timestamp;
+        public List<LineaDeVenta> Ventas { get; set; }
 
-        public int ID
-        {
-            get => _id;
-        }
+        public int ID { get; set; }
 
-        public bool Activo
-        {
-            get => _activo;
-        }
+        public bool Activo { get; set; }
 
-        public float Monto
-        {
-            get => _monto;
-        }
+        public float Monto { get; set; }
 
-        public string Timestamp
-        {
-            get => _timestamp;
-        }
+        public string Timestamp { get; set; }
 
-            public Venta(VentaDto dto)
+        public Venta(VentaDto dto)
         {
-            _id = dto.ID;
-            _activo = dto.Activo;
-            _monto = dto.Monto;
-            _timestamp = dto.Timestamp;
+            ID = dto.ID;
+            Activo = dto.Activo;
+            Monto = dto.Monto;
+            Timestamp = dto.Timestamp;
         }
 
         public VentaDto Dto()
@@ -51,7 +37,7 @@ namespace Libreria.BusinessLogic
 
         public void Anular()
         {
-            _activo = false;
+            Activo = false;
         }
     }
 }
